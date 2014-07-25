@@ -1,7 +1,12 @@
-## 移动App架构模式
-本文主要总结了几种常用的架构模式, 基本是层层递进的, 转载请注名出处 <http://blog.csdn.net/uxyheaven>
+## 移动App架构设计
 
-在一个app的不同生命周期采用不同的架构模式可以有效的提高开发效率
+本文主要总结了几种常用的架构模式, 基本是层层递进的
+转载请注名出处 [http://blog.csdn.net/uxyheaven](http://blog.csdn.net/uxyheaven/article/details/38041091), 良好的排版在[https://github.com/uxyheaven/](https://github.com/uxyheaven/NativeAppFrameworkDesign)阅读
+
+
+如果觉得本文不错, 请在csdn给个顶, github给个star.
+
+Native app的开发相比传统的项目迭代周期要短很多, 需求的变化也频繁一些, 在开发的不同生命周期里采用不同的架构模式可以有效的节约开发时间, 提高开发效率, 这篇文章先介绍几种常用的架构模式:
 
 ### 基本的MVC
 移动app一般都是采用经典的mvc架构
