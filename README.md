@@ -17,7 +17,7 @@ Native app的开发相比传统的项目迭代周期要短很多, 需求的变�
 | 视图层(view) | 视图对象是一个应用中, 用户可以看到的对象. 视图对象知道如何绘制自己, 也能够响应用户的操作. 视图对象的主要目的之一是将应用模型对象中的数据显示出来, 并允许用户编辑该数据 | 视图通过不能直接操作模型层, 通过target-action, delegate, dataSource和控制器进行反馈 |
 | 控制器层(controller) | 控制器层是在视图层和若干个模型层的中间人  | c可以直接操作模型层和视图层 |
 
-![Mou icon](./image/mvc.png)
+![mvc](./image/mvc.png)
 
 总结:
 C对M：API
@@ -26,9 +26,13 @@ V对C：Target-action， Delegate，Datasource
 M对C：Notification，KVO
 
 ### MVC的改进版 MVVM
-MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数据转换为 view 可以呈现的东西.
+MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数据转换为 view 可以呈现的东西. 适合大量展示类的App.
 
-![Mou icon](./image/mvvm.png)
+![mvvm](./image/mvvm.png)
+
+### HMVC
+Hierarchical MVC, 是MVC包含⼦子MVC, 适合重型B/S架构的WebApp.
+![hmvc](./image/hmvc.png)
 
 ### 三层架构
 我们在来看一下经典的三层架构
@@ -45,10 +49,10 @@ MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数�
 | 业务逻辑层(BLL) | 从ＤＡＬ中获取数据, 在ＵＩ显示; 从ＵＩ中获取用户指令和数据, 执行业务逻辑或通过ＤＡＬ写入数据源  | 作为U层与Ｄ层的桥梁,目的在于展现清晰的函数结构, 只负责数据处理传递, 不涉及ＳＱＬ语句和ＡＤＯ.ＮＥＴ |
 | 数据访问层(DAL) | 直接操作数据库，针对数据的增添 删除 修改 查找; 具体为业务逻辑层或表示层提供数据服务。  | 专门操作数据库, 不考虑数据合法性. 数据库错误返回－1, 逻辑错误返回0, 并告知错误原因, 成功返回1 |
 
-![Mou icon](./image/mvc_vs_3.png)
+![mvc_vs_3](./image/mvc_vs_3.png)
 
 然后呢,我们现在的架构则是
-![Mou icon](./image/3.png)
+![mvc2](./image/3.png)
 
 ### 四层架构
 
@@ -84,4 +88,4 @@ MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数�
 
 ### 新秀VIPER
 viper这里不多说了,请想了解的自行搜索
-![Mou icon](./image/viper.png)
+![viper](./image/viper.png)
