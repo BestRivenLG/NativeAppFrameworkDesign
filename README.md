@@ -31,7 +31,7 @@ MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数�
 ![mvvm](./image/mvvm.png)
 
 ### HMVC
-Hierarchical MVC, 是MVC包含⼦子MVC, 适合重型B/S架构的WebApp.
+Hierarchical MVC, 是MVC包含子MVC, 适合重型B/S架构的WebApp.
 ![hmvc](./image/hmvc.png)
 
 ### 三层架构
