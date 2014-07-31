@@ -31,7 +31,18 @@ MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数�
 ![mvvm](./image/mvvm.png)
 
 ### HMVC
-Hierarchical MVC, 是MVC包含子MVC, 适合重型B/S架构的WebApp.
+Hierarchical MVC, 把客户端应用程序分解为有层次的父子关系的MVC, 反复应用这个模式, 形成结构化的客户端架构. 适合重型B/S架构的WebApp.
+
+一个MVC模块由应用程序的一个模块抽象而成. 其中很重要的一个概念就是 Parent MVC , 它可以对应界面上的实体, 也可以是一个抽象的对象. 设想一个app 有标签栏, 工具栏, 导航栏, 主工作区, 对应到HMVC上就是这个app最底部的标签栏 是 Layer1, Layer2 导航栏,主要工作区, 工具栏. 如果觉得 Layer2 太复杂可以吧主要工作区放到 Layer3, 依次类推.
+
+Controller 是功能模块的总控室, 它负责和子Controller或父Controller通信，并通知它的 View 处理改变界面显示, Model 处理一些业务逻辑或数据库访问操作. 如才的例子里, 点击了工具栏里的一个按钮, 工具栏的Controller 响应这个event, 发现是要切换主工作区, 工具栏做不了,就传递他的父Controller处理(如果父Controller也处理不了, 就继续往上传递)然后标签栏的Controller处理切换主工作区. 
+
+优点:
+
+* 把程序分成了几个部分, 降低了依赖性 
+* 支持鼓励重用代码, 组件或者模块。
+* 在今后的维护中, 提高了可扩展性。
+
 ![hmvc](./image/hmvc.png)
 
 ### 三层架构
