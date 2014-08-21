@@ -13,17 +13,18 @@ Native app的开发相比传统的项目迭代周期要短很多, 需求的变�
 
 | 层次 | 作用 | 设计原则 |
 | ------------ | ------------- | ------------ |
-| 模型层(model) | 封装了应用的一系列数据, 并定义了操作, 处理这些数据的逻辑和计算规则。  | 通过C：Notification,KVO对控制器进行反馈 |
+| 模型层(model) | 封装了应用的一系列数据, 并定义了操作, 处理这些数据的逻辑和计算规则。  |通过Notification,KVO对控制器进行反馈 |
 | 视图层(view) | 视图对象是一个应用中, 用户可以看到的对象. 视图对象知道如何绘制自己, 也能够响应用户的操作. 视图对象的主要目的之一是将应用模型对象中的数据显示出来, 并允许用户编辑该数据 | 视图通过不能直接操作模型层, 通过target-action, delegate, dataSource和控制器进行反馈 |
 | 控制器层(controller) | 控制器层是在视图层和若干个模型层的中间人  | c可以直接操作模型层和视图层 |
 
 ![mvc](./image/mvc.png)
 
 总结:
-C对M：API
-C对V：Outlet
-V对C：Target-action， Delegate，Datasource
-M对C：Notification，KVO
+
+* C对M：API
+* C对V：Outlet
+* V对C：Target-action， Delegate，Datasource
+* M对C：Notification，KVO
 
 ### MVC的改进版 MVVM
 MVVM是在MVC的基础上多了一个View Model: 表示逻辑, 将 model 的数据转换为 view 可以呈现的东西. 适合大量展示类的App.
