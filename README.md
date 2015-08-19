@@ -1,7 +1,7 @@
 # 移动App架构设计
 
 本文主要总结了几种常用的架构模式, 基本是层层递进的
-转载请注名出处 [http://blog.csdn.net/uxyheaven](http://blog.csdn.net/uxyheaven/article/details/38041091), 良好的排版在[https://github.com/uxyheaven/](https://github.com/uxyheaven/NativeAppFrameworkDesign)阅读
+转载请注名出处 [http://blog.csdn.net/uxyheaven](http://blog.csdn.net/uxyheaven/article/details/38041091), 良好的排版在[https://github.com/uxyheaven/NativeAppFrameworkDesign](https://github.com/uxyheaven/NativeAppFrameworkDesign)阅读
 
 
 如果觉得本文不错, 请在csdn给个顶, github给个star.
