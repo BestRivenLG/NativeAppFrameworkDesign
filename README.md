@@ -111,3 +111,7 @@ service层的架构和普通的分层架构的不同是: service层内部有数�
 ### VIPER
 viper这里不多说了,请想了解的自行搜索
 ![viper](./image/viper.png)
+
+## 平台
+todo
+![platform](./image/platform.png)
